@@ -45,8 +45,7 @@ public class Video extends ElementoMultimediale implements Abbassa, Alza, Riprod
     }
 
     @Override
-    public boolean riproduci() {
+    public void riproduci() {
 
-        return false;
     }
 }
