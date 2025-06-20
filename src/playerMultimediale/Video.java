@@ -66,7 +66,7 @@ public class Video extends ElementoMultimediale implements Abbassa, Alza, Riprod
     @Override
     public void riproduci() {
         for (int i = 0; i < durata; i++) {
-            System.out.println("Il titolo è: " + titolo + " con un volume di :" + " !".repeat(volume));
+            System.out.println("Il titolo è: " + titolo + " con un volume di :" + " !".repeat(volume) + " mentre la luminosità è :" + " *".repeat(luminosita));
         }
 
     }
