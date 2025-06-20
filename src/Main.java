@@ -22,37 +22,37 @@ public class Main {
 
             switch (valore) {
                 case 0:
-                    System.out.println("Titolo:");
+                    System.out.println("Titolo Audio:");
                     String titoloA = scanner.nextLine();
-                    System.out.println("Durata:");
+                    System.out.println("Durata Audio:");
                     int durataA = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Volume:");
+                    System.out.println("Volume Audio:");
                     int volumeA = Integer.parseInt(scanner.nextLine());
                     elementi[i] = new RegistrazioneAudio(titoloA, durataA, volumeA);
                     break;
 
                 case 1:
-                    System.out.println("Titolo:");
+                    System.out.println("Titolo Video:");
                     String titoloV = scanner.nextLine();
-                    System.out.println("Durata:");
+                    System.out.println("Durata Video:");
                     int durataV = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Volume:");
+                    System.out.println("Volume Video:");
                     int volumeV = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Luminosità:");
+                    System.out.println("Luminosità Video:");
                     int luminositaV = Integer.parseInt(scanner.nextLine());
                     elementi[i] = new Video(titoloV, durataV, volumeV, luminositaV);
                     break;
 
                 case 2:
-                    System.out.println("Titolo:");
+                    System.out.println("Titolo Immagine:");
                     String titoloI = scanner.nextLine();
-                    System.out.println("Luminosità:");
+                    System.out.println("Luminosità Immagine:");
                     int luminositaI = Integer.parseInt(scanner.nextLine());
                     elementi[i] = new Immagine(titoloI, luminositaI);
                     break;
 
                 default:
-                    System.out.println("Valore non valido, salto l'elemento.");
+                    System.out.println("Valore non valido");
                     i--;
                     break;
             }
