@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Digita 0 per RegistrazioneAudio, 1 per Video, 2 per Immagine.");
 
         for (int i = 0; i < 5; i++) {
-            System.out.println("Elemento #" + (i + 1) + " - scegli il tipo: 0 Audio , 1 Video , 3 Immagine?");
+            System.out.println("Elemento #" + (i + 1) + " - scegli il tipo: 0 Audio , 1 Video , 2 Immagine?");
 
             int valore = Integer.parseInt(scanner.nextLine());
 
