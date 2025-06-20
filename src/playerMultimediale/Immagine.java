@@ -47,4 +47,11 @@ public class Immagine extends ElementoMultimediale implements Abbassa, Alza {
     public int abbassaLuminosita() {
         return --luminosita;
     }
+
+    @Override
+    public String toString() {
+        return "Immagine{" +
+                "luminosita=" + luminosita +
+                '}';
+    }
 }
