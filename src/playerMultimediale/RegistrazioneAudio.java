@@ -46,7 +46,10 @@ public class RegistrazioneAudio extends ElementoMultimediale implements Abbassa,
     }
 
     @Override
-    public void riproduci() {
-
+    public boolean riproduci() {
+        for (int i = 0; i < durata; i++) {
+            System.out.println("Il titolo è: " + titolo + " !".repeat(volume));
+        }
+        return;
     }
 }

@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface Riproduci {
-    void riproduci();
+    boolean riproduci();
 }
