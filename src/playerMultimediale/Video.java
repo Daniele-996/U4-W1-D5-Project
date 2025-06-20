@@ -7,10 +7,21 @@ import interfaces.Riproduci;
 public class Video extends ElementoMultimediale implements Abbassa, Alza, Riproduci {
     private int durata;
     private int volume = 5;
+    private int luminosita = 3;
 
-    public Video(String titolo, int durata, int volume) {
+    public Video(String titolo, int durata, int volume, int luminosita) {
         super(titolo);
         this.durata = durata;
+        this.volume = volume;
+        this.luminosita = luminosita;
+    }
+
+    public int getLuminosita() {
+        return luminosita;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
     }
 
     public int getDurata() {
@@ -34,6 +45,14 @@ public class Video extends ElementoMultimediale implements Abbassa, Alza, Riprod
         this.volume = volume;
     }
 
+    public int abbassaLuminosita() {
+        return --luminosita;
+    }
+
+    public int alzaLuminosita() {
+        return ++luminosita;
+    }
+
     @Override
     public int abbassaVolume() {
         return --volume;
@@ -46,6 +65,9 @@ public class Video extends ElementoMultimediale implements Abbassa, Alza, Riprod
 
     @Override
     public void riproduci() {
+        for (int i = 0; i < durata; i++) {
+            System.out.println("Il titolo è: " + titolo + " con un volume di :" + " !".repeat(volume));
+        }
 
     }
 }
