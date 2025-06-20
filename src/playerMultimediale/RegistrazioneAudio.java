@@ -4,7 +4,7 @@ import interfaces.Abbassa;
 import interfaces.Alza;
 import interfaces.Riproduci;
 
-public abstract class RegistrazioneAudio extends ElementoMultimediale implements Abbassa, Alza, Riproduci {
+public class RegistrazioneAudio extends ElementoMultimediale implements Abbassa, Alza, Riproduci {
     private int durata;
     private int volume = 5;
 
@@ -41,8 +41,18 @@ public abstract class RegistrazioneAudio extends ElementoMultimediale implements
     }
 
     @Override
+    public int abbassaLuminosita() {
+        return 0;
+    }
+
+    @Override
     public int alzaVolume() {
         return ++volume;
+    }
+
+    @Override
+    public int alzaLuminosita() {
+        return 0;
     }
 
     @Override
