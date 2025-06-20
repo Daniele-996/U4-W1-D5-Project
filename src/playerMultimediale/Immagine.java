@@ -6,6 +6,10 @@ import interfaces.Alza;
 public class Immagine extends ElementoMultimediale implements Abbassa, Alza {
     public int luminosita = 5;
 
+    public Immagine(String titolo) {
+        super(titolo);
+    }
+
     public Immagine(String titolo, int luminosita) {
         super(titolo);
         this.luminosita = luminosita;

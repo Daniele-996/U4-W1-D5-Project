@@ -8,6 +8,11 @@ public class RegistrazioneAudio extends ElementoMultimediale implements Abbassa,
     private int durata;
     private int volume = 5;
 
+    public RegistrazioneAudio(String titolo) {
+        super(titolo);
+
+    }
+
     public RegistrazioneAudio(String titolo, int durata, int volume) {
         super(titolo);
         this.durata = durata;

@@ -9,6 +9,11 @@ public class Video extends ElementoMultimediale implements Abbassa, Alza, Riprod
     private int volume = 5;
     private int luminosita = 3;
 
+    public Video(String titolo) {
+        super(titolo);
+
+    }
+
     public Video(String titolo, int durata, int volume, int luminosita) {
         super(titolo);
         this.durata = durata;
