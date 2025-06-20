@@ -45,12 +45,15 @@ public class Video extends ElementoMultimediale implements Abbassa, Alza, Riprod
         this.volume = volume;
     }
 
-    public void abbassaLuminosita() {
-        --luminosita;
+    @Override
+    public int abbassaLuminosita() {
+        return --luminosita;
+
     }
 
-    public void alzaLuminosita() {
-        ++luminosita;
+    @Override
+    public int alzaLuminosita() {
+        return ++luminosita;
     }
 
     @Override
