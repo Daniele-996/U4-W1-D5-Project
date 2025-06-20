@@ -58,20 +58,26 @@ public class Main {
             }
         }
         System.out.println("Hai creato gli elementi!!");
+        while (true) {
+            System.out.println("Quale elemento vuoi eseguire? (da 0 a 4), oppure scrivi 'stop' per uscire:");
+            String input = scanner.nextLine();
 
-        System.out.println("Quale elemento vuoi eseguire? (da 0 a 4):");
-        int scelta = Integer.parseInt(scanner.nextLine());
+            if (input.equals("stop")) {
+                break;
+            }
 
-        ElementoMultimediale elem = elementi[scelta];
+            int scelta = Integer.parseInt(input);
 
-        if (elem instanceof Immagine) {
-            ((Immagine) elem).mostra();
-        } else if (elem instanceof RegistrazioneAudio) {
-            ((RegistrazioneAudio) elem).riproduci();
-        } else if (elem instanceof Video) {
-            ((Video) elem).riproduci();
+            ElementoMultimediale elem = elementi[scelta];
+
+            if (elem instanceof Immagine) {
+                ((Immagine) elem).mostra();
+            } else if (elem instanceof RegistrazioneAudio) {
+                ((RegistrazioneAudio) elem).riproduci();
+            } else if (elem instanceof Video) {
+                ((Video) elem).riproduci();
+            }
         }
-
         scanner.close();
     }
 }
