@@ -4,7 +4,7 @@ import interfaces.Abbassa;
 import interfaces.Alza;
 import interfaces.Riproduci;
 
-public class RegistrazioneAudio extends ElementoMultimediale implements Abbassa, Alza, Riproduci {
+public abstract class RegistrazioneAudio extends ElementoMultimediale implements Abbassa, Alza, Riproduci {
     private int durata;
     private int volume = 5;
 
